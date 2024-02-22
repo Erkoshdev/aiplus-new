@@ -1,0 +1,286 @@
+@import "fonts";
+@import "base";
+
+.promo {
+  background: #3562FF;
+  border-radius: 0 0 60px 60px;
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  max-height: 700px;
+}
+
+.promo-content {
+  padding: 50px 420px 50px 0;
+  .title-md {
+    margin-top: 110px;
+  }
+  p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 120%;
+    color: #fff;
+    margin-top: 130px;
+  }
+  .btn-main {
+    min-width: 430px;
+    margin-top: 18px;
+  }
+}
+
+.title-md {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 120%;
+  color: #202020;
+}
+
+.title-md.light {
+  color: #FFFFFF;
+}
+
+.promo-img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 600px;
+}
+
+.promo-img img {
+  width: 100%;
+  height: auto;
+}
+
+.promo-img img.sm {
+  display: none;
+}
+
+.content .title-md {
+  text-align: center;
+}
+
+.content-row {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 24px;
+}
+
+.content-item {
+  border: 1px solid #EFEFEF;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  min-height: 300px;
+  position: relative;
+  &:nth-of-type(1) img {
+    width: 110px;
+  }
+  &:nth-of-type(2) img {
+    width: 84px;
+  }
+  &:nth-of-type(3) img {
+    width: 81px;
+  }
+  &:nth-of-type(4) img {
+    width: 51px;
+  }
+  p {
+    font-size: 19px;
+    line-height: 120%;
+    font-weight: 400;
+    color: #202020;
+    margin-top: auto;
+  }
+}
+
+.content-item + .content-item:before {
+  content: '';
+  background: url("../img/icon/arrow.svg") no-repeat center/contain;
+  width: 56px;
+  height: 24px;
+  position: absolute;
+  left: -36px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.video {
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.video-container {
+  width: 511px;
+  height: 288px;
+  flex-shrink: 0;
+  position: relative;
+  border-radius: 22px;
+  overflow: hidden;
+  margin-left: 24px;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.score {
+  margin-top: 100px;
+  background: #3965FF;
+  padding: 50px;
+  border-radius: 22px;
+}
+
+.score-list {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.score-item {
+  padding: 14px;
+  border-radius: 14px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  b {
+    font-size: 48px;
+    line-height: 120%;
+    color: #3562FF;
+    font-weight: 800;
+    display: block;
+    text-align: center;
+  }
+  span {
+    display: block;
+    font-size: 20px;
+    line-height: 120%;
+    color: #000;
+    font-weight: 400;
+    text-align: center;
+  }
+}
+
+.footer {
+  background: #3562FF;
+  border-radius: 80px 80px 0 0;
+}
+
+.footer-row {
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+}
+
+.footer-left {
+  width: 30%;
+}
+
+.footer-center {
+  width: 21%;
+  text-align: center;
+  img {
+    width: 85px;
+    height: auto;
+  }
+}
+
+.footer-right {
+  width: 49%;
+}
+
+.social-list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.i-whatsapp {
+  background: url("../img/icon/whatsapp.svg");
+  width: 24px;
+  height: 24px;
+}
+
+.i-youtube {
+  background: url("../img/icon/youtube.svg");
+  width: 34px;
+  height: 24px;
+}
+
+.i-insta {
+  background: url("../img/icon/insta.svg");
+  width: 24px;
+  height: 24px;
+}
+
+.i-phone {
+  background: url("../img/icon/phone.svg");
+  width: 24px;
+  height: 24px;
+}
+
+.contacts {
+  margin-top: 20px;
+}
+
+.contact {
+  font-family: Onest, sans-serif;
+  font-size: 18px;
+  line-height: 120%;
+  font-weight: 400;
+  color: #fff;
+  white-space: nowrap;
+  a {
+    font-family: Onest, sans-serif;
+    font-size: 18px;
+    line-height: 120%;
+    font-weight: 400;
+    color: #fff;
+    white-space: nowrap;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+.contact + .contact {
+  margin-top: 2px;
+}
+
+.copyright {
+  display: block;
+  margin-top: 24px;
+  font-family: Onest, sans-serif;
+  font-size: 18px;
+  line-height: 120%;
+  font-weight: 400;
+  color: #fff;
+}
+
+.privacy-policy-text, .privacy-policy-link {
+  font-family: Onest, sans-serif;
+  font-size: 18px;
+  line-height: 120%;
+  font-weight: 400;
+  color: #fff;
+}
+
+.privacy-policy-link {
+  display: block;
+  margin-top: 24px;
+}
+
+.privacy-policy-link:hover {
+  text-decoration: underline;
+}
+
+
+
+@import "media";
