@@ -281,6 +281,34 @@
   text-decoration: underline;
 }
 
+.feedback-modal .modal-dialog {
+  max-width: 400px;
+}
+
+.feedback-container {
+  background: #3562ff;
+  border-radius: 12px;
+  padding: 30px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.feedback-container input {
+  border: 1px solid #E3E3E3;
+  padding: 12px 20px;
+  border-radius: 12px;
+}
+
+.feedback-container input:focus {
+  outline: none;
+}
+
+.feedback-container .btn-main {
+  width: 100%;
+}
+
+
 
 
 @import "media";

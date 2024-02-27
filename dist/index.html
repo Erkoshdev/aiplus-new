@@ -19,7 +19,7 @@
         </a>
         <h1 class="title-md light">Навсегда закройте пробелы в занятиях с нашим курсом онлайн обучения по алгебре</h1>
         <p>Обеспечьте вашему ребенку уверенность <br>в учебе и готовность к экзаменам</p>
-        <a href="#" class="btn-main">Записаться</a>
+        <a href="#" class="btn-main" data-bs-toggle="modal" data-bs-target="#feedbackModal">Записаться</a>
       </div>
     </div>
     <div class="promo-img">
@@ -121,6 +121,16 @@
           <a href="#" class="privacy-policy-link">Политика конфиденциальности</a>
         </div>
       </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade feedback-modal" id="feedbackModal">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content feedback-container">
+      <input type="text" placeholder="Ваше имя">
+      <input type="text" placeholder="Ваш номер" id="phoneMask">
+      <button class="btn-main" data-bs-dismiss="modal">Отправить</button>
     </div>
   </div>
 </div>
